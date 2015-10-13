@@ -1,0 +1,301 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url("assets/bg.jpg")no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+header {
+  width: 100%;
+}
+h3 {
+  font-size: 8px;
+}
+h4 {
+  margin: 18px 5px 10px 5px;
+}
+// header
+.topNav {
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding-top: 5px;
+  ul {
+    padding-left: 70%;
+    li {
+      display: inline-block;
+      &:nth-child(1) {
+        img {
+          border-left-style: dotted;
+          border-color: white;
+          width: 40px;
+        }
+      }
+      img {
+        width: 35px;
+        border-width: 2px;
+      }
+    }
+  }
+}
+.navButtons {
+  width: 85%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-left: 120px;
+  li {
+    display: inline-block;
+    .button {
+      font-size: 16px;
+      color: #fff;
+      background-color: #d43f3a;
+      border-color: #FFF;
+    }
+  }
+}
+.btn-danger {
+  width: 188px;
+  border-width: 2px;
+}
+
+// **************************
+// top container
+// **************************
+.container1 {
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  background: url(assets/top-image.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: thick;
+  border-color: white;
+  padding-left: 55px;
+  img {
+    width: 270px;
+    padding: 70px 0;
+  }
+}
+.container2 {
+  background-color: transparent;
+  width: 64%;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding-left: 25px;
+  border-width: thick;
+  border-style: solid white;
+}
+.col3 {
+  display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    margin: 3px 5px 10px -3px;
+    text-align: left;
+    padding: 0px 10px 0px 18px;
+    background-color: #fff;
+}
+.heading {
+  font-size: 20px;
+  padding: 17px 0;
+}
+.read {
+  text-align: center;
+  color: #d43f3a;
+}
+.container3 {
+  width: 61%;
+  height: 320px;
+  margin: 0 auto;
+
+}
+.leftbox {
+  width: 65%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.rightbox {
+  width: 33%;
+  height: 110%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.box {
+  width: 125px;
+  margin: 50px -156px;
+  border: 25px solid;
+  border-color: #d9534f;
+  position: absolute;
+  p {
+    color: white;
+    background-color: #d9534f;
+    margin: -10px 0 -8px -18px;
+    font-size: 13px;
+  }
+}
+
+.arrow {
+background: transparent;
+display: inline;
+margin: 50px -32px;
+border: 25px solid transparent;
+border-left-color: #d9534f;
+position: absolute;
+}
+
+/*to move the arrow -step 1 set up keyframes*/
+/*make it move*/
+@-webkit-keyframes move {
+  0% {left: 0px; top: 0px;}
+  25% {left: 500px; top: 0px;}
+  50% { left: 500px; top: 200px;}
+  75% { left: 0px; top:200px;}
+  100% { left:0px; top: 0px;}
+}
+/*step 2 set up the animation*/
+.arrow {
+  -webkit-animation: move 3s infinite,
+  alternate,
+  change 10s 3s linear infinite;
+}
+.box{
+  -webkit-animation: move 3s infinite,
+  alternate,
+  change 10s 3s linear infinite;
+  /*animation: move 3s infinite,
+  alternate,
+  change 10s 3s linear infinite;*/
+}
+.lance {
+  display: inline-block;
+  width: 49%;
+  height: 49%;
+  vertical-align: top;
+  background: url(assets/sk8er-4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 33px;
+  border-style: solid;
+}
+.rodney {
+  display: inline-block;
+  width: 49%;
+  height: 49%;
+  vertical-align: top;
+  background: url(assets/sk8er-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 33px;
+  border-style: solid;
+}
+.steve {
+  display: inline-block;
+  width: 99%;
+  height: 49%;
+  vertical-align: top;
+  background: url(assets/sk8er-1.png)20px no-repeat;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding: 65px;
+  border-style: solid;
+  margin-top: 10px;
+}
+.tommy {
+  display: inline-block;
+    width: 100%;
+    height: 92%;
+    vertical-align: top;
+    background: url(assets/sk8er-2.png)1px no-repeat;
+    background-size: 265px 315px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 65px;
+    border-style: solid;
+    position: a;
+}
+.container4 {
+  width: 61%;
+  height: 285px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 30px;
+  padding: 5px;
+  img {
+    display: inline-block;
+    padding: 5px;
+  }
+}
+.container5 {
+  width: 61%;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 45px;
+
+  }
+  .container5 > section:nth-child(2) > div > button {
+    margin-left: 130px;
+  }
+
+  .col2 {
+    display: inline-block;
+      width: 49%;
+      vertical-align: top;
+      margin: 3px 5px 10px -3px;
+      text-align: left;
+      padding: 0px 10px 0px 18px;
+      background-color: #fff;
+  }
+  .contact {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    ul {
+      margin: 0;
+      padding: 3px;
+      padding-bottom: 44px;
+    }
+    li {
+      display: inline-block;
+      img {
+        width: 25px;
+        border-width: 2px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .form-group {
+    padding: 20px;
+    box-shadow: 1%;
+  }
+  .form-control {
+    margin: 5px;
+  }
