@@ -13,7 +13,7 @@ body {
     url("assets/bg.jpg")no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    
 }
 header {
   width: 100%;
@@ -363,12 +363,21 @@ body{
   display: none;
 }
 .container4 {
-    width: 52%;
+    width: 90%;
     margin: 0 auto;
     background-color: white;
     margin-top: 30px;
-    height: 553px;
+    height: 200px;
+    padding-left: 50px;
+
+    img {
+    // transform: rotate(90deg);
+    display: inline-block;
+    max-height: 180px;
+    margin: 0 auto;
+    }
 }
+
 
     .btn-danger {
       width: 300px;
@@ -382,8 +391,8 @@ body{
     margin-bottom: 45px;
 }
 .col2 {
-    display: inline-block;
-    width: 48%;
+    display: block;
+    width: 100%;
     vertical-align: top;
     margin: -18px 5px 55px -3px;
     text-align: left;

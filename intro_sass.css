@@ -3,8 +3,7 @@ body {
   padding: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/bg.jpg") no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-repeat: no-repeat; }
 
 header {
   width: 100%; }
@@ -312,11 +311,16 @@ h4 {
   .container3 {
     display: none; }
   .container4 {
-    width: 52%;
+    width: 90%;
     margin: 0 auto;
     background-color: white;
     margin-top: 30px;
-    height: 553px; }
+    height: 200px;
+    padding-left: 50px; }
+    .container4 img {
+      display: inline-block;
+      max-height: 180px;
+      margin: 0 auto; }
   .btn-danger {
     width: 300px;
     border-width: 2px; }
@@ -327,8 +331,8 @@ h4 {
     margin-top: 30px;
     margin-bottom: 45px; }
   .col2 {
-    display: inline-block;
-    width: 48%;
+    display: block;
+    width: 100%;
     vertical-align: top;
     margin: -18px 5px 55px -3px;
     text-align: left;
