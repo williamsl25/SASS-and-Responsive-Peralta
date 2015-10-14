@@ -60,7 +60,7 @@ in style.scss
 In the scss file
   @import "variables";
   @import "mixins";
-  
+
 In the mixin.scss file
 EXAMPLE ONE:
 DEFINE MIXIN
@@ -74,15 +74,3 @@ DEFINE MIXIN
   }
 USE MIXIN
   @include val-gradient();
-EXAMPLE TWO:
-DEFINE MIXIN ("5%" is default value to be overriden by user input)
-  @mixin border-radius($radius:5%){
-    -webkit-border-radius:$radius;
-    -moz-border-radius:$radius;
-    border-radius:$radius;
-  }
-USE MIXIN
-  @include border-radius();
-EXAMPLE THREE
-  @extend; COMMENT:This pulls in a pre-established set of styles that can then be overridden or added upon
-*/
